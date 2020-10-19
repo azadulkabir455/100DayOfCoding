@@ -1,0 +1,65 @@
+doctype html
+html
+    head
+        title Dance website
+        style
+            include ../public/css/style.css
+    body
+        div.container
+            nav#navbar
+                ul
+                    li #[a(href="/" title="Home Page") Home]
+                    li #[a(href="/about" title="Home Page") About]
+                    li #[a(href="/contact" title="Home Page") Contact Us]
+            section.header
+                h1  Effortless Moving You Can Afford.
+                button(type="button") #[a(href="/contact.pug") Contact us]
+            section.hero
+                div.heroImg
+                    img(src="../public/img/welcome-img.jpg")
+                div.heroContent
+                    h1  WELCOME TO DANCE STUDIO
+                    p ina Wang, who was born and raised in Taiwan, is happy to now call New York her home. She is a graduate of the National Taiwan College of Performance Art in Taipei, Taiwan. Tina majored in Dance and Performance with a concentration in Modern Dance. She has over 10 years of teaching experience and has worked as a dance instructor for both adults and children. Having taught young children for many years, Tina is thrilled to open her first dance studio, called Studio 214 and is excited to bring her expertise to Brooklyn, New York.
+
+                    | Tina Wang, who was born and raised in Taiwan, is happy to now call New York her Taiwan. Tina majored in Dance and Performance with a concentration in Modern Dance.
+
+                    button(type="button") #[a(href="#") Click for more]
+            
+            section.offer 
+                div.offerImg
+                    img(src="../public/img/woman.png")
+                div.offerContent
+                    h1 WE OFFER-ADULTS #[br] TO ACHIEVE THE BEST
+                    div.services
+                        service
+                        img(src="../public/img/zumba-dance.png")
+                        p something
+                    div.services
+                        service
+                        img(src="../public/img/private-dance.png")
+                        p something
+                    div.services
+                        service
+                        img(src="../public/img/ballroom-dancing.png")
+                        p something
+
+            section.gallery
+                div.img
+                    img(src="../public/img/4.jpg")
+                    p something
+                div.img
+                    img(src="../public/img/5.jpg")
+                    p something
+                div.img
+                    img(src="../public/img/6.jpg")
+                    p something
+            footer
+                p &copy; copyright 
+
+
+
+
+
+    script
+        include ../public/js/myScript.js
+        

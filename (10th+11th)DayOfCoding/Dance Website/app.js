@@ -2,7 +2,7 @@ const express = require('express');
 const path = require('path');
 
 const app = express();
-const port = 3000;
+const port = 8000;
 
 app.use("/public",express.static("public"));
 
@@ -18,13 +18,7 @@ app.get("/about", (req,res) => {
 app.get('*',(req,res) => {
     res.status(404).send("404 not found");
 })
-app.get('/user/:id', function (req, res, next) {
-    console.log('Request URL:', req.originalUrl)
-    next()
-  }, function (req, res, next) {
-    console.log('Request Type:', req.method)
-    next()
-  })
+
 
 
 app.listen(port, () => {

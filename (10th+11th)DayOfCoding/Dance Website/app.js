@@ -12,9 +12,19 @@ app.set("views", path.join(__dirname, "views"));
 app.get("/", (req,res) => {
     res.status(200).render("index.pug");
 })
+app.get("/about", (req,res) => {
+    res.status(200).render("about.pug");
+})
 app.get('*',(req,res) => {
     res.status(404).send("404 not found");
 })
+app.get('/user/:id', function (req, res, next) {
+    console.log('Request URL:', req.originalUrl)
+    next()
+  }, function (req, res, next) {
+    console.log('Request Type:', req.method)
+    next()
+  })
 
 
 app.listen(port, () => {

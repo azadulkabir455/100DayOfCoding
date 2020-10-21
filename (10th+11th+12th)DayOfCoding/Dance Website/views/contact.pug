@@ -1,0 +1,19 @@
+extends base
+block style
+    style
+        include ../public/css/style.css
+block content
+    section.container
+        div.formContainer
+            h1 Contact us
+            form(action="", method="get")
+                input(type="text" name="name" id="name" placeholder="Write your name")
+                input(type="tel" name="phone" id="phone" placeholder="Write your phon number")
+                input(type="email" name="email" id="email" placeholder="Write your email")
+                input(type="text" name="address" id="address" placeholder="Write your address")
+                textarea(name="comment", cols="30", rows="10" placeholder="Write your comment")
+                input(type="submit", value="submit")
+
+block script
+    script
+        include ../public/js/myScript.js 

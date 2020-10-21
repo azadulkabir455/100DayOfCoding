@@ -1,0 +1,14 @@
+extends base
+
+block style
+    style
+        include ../public/css/style.css
+
+block content
+    div.error
+        h1 404 Page not found
+        button(type="button") #[a(href="/" ) Back to home]
+
+block script
+    script
+        include ../public/js/myScript.js 

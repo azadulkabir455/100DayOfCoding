@@ -16,7 +16,7 @@ app.get("/contact", (req,res) => {
     res.status(200).render("contact.pug");
 })
 app.get('*',(req,res) => {
-    res.status(404).send("404 not found");
+    res.status(404).render("404.pug");
 })
 
 

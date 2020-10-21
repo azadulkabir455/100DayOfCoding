@@ -235,6 +235,7 @@ footer {
     border: 1px dotted #aaa;
     padding: 20px 15px;
     border-radius: 5px;
+    resize: none;
 }
 .formContainer form input::placeholder {
     font-family: var(--body-text);
@@ -254,4 +255,30 @@ footer {
     padding: 15px 20px;
     color: #e2e2e2;
     border:none;
+}
+.error {
+    margin: 250px 0;
+}
+.error h1 {
+    font-family: var(--heading-text);
+    font-size: 88px;
+    color: #f19797;
+    text-align: center;
+}
+.error button {
+    display:block;
+    margin: 30px auto;
+    background: #101c2e;
+    border-radius: 5px;
+    border:none;
+    outline: none;
+}
+.error button a{
+    font-family: var(--heading-text);
+    font-size: 14px;
+    text-transform: uppercase;
+    padding: 12px 18px;
+    display: inline-block;
+    color: #e2e2e2;
+    text-decoration: none;
 }

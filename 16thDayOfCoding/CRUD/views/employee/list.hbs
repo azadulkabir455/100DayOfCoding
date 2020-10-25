@@ -1,0 +1,25 @@
+<table class="table table-stripped">
+    <thead>
+        <tr>
+            <th>Name</th>
+            <th>Email</th>
+            <th>Number</th>
+            <th>City</th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+        {{#each list}}
+        <tr>
+            <td>{{this.fullname}}</td>
+            <td>{{this.email}}</td>
+            <td>{{this.mobile}}</td>
+            <td>{{this.city}}</td>
+            <td>
+                <a href="#"><i class="fas fa-pencil-alt"></i></a>
+                <a href="#"><i class="fas fa-trash"></i></a>
+            </td>
+        </tr>
+        {{/each}}
+    </tbody>
+</table>
